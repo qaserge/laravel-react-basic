@@ -45,6 +45,10 @@ Route::get('/appliance', function () {
     return Inertia::render('ApplianceComponent');
 });
 
+Route::get('/color', function () {
+    return Inertia::render('ColorComponent');
+});
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
