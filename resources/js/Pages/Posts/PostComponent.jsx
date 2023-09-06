@@ -1,5 +1,5 @@
 export default function PostComponent() {
   return (
-    <div>PostComponent</div>
+    <div>Post Function Component</div>
   )
 }
