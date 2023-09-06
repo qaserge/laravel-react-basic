@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FormController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
@@ -48,6 +49,9 @@ Route::get('/appliance', function () {
 Route::get('/color', function () {
     return Inertia::render('ColorComponent');
 });
+
+Route::get('showForm',[FormController::class, 'showForm']);
+Route::post('submitForm',[FormController::class, 'submitForm']);
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
