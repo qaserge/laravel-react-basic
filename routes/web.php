@@ -37,6 +37,10 @@ Route::get('/products', function () {
     return Inertia::render('AllProductComponent');
 });
 
+Route::get('/students', function () {
+    return Inertia::render('AllStudentComponent');
+});
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
